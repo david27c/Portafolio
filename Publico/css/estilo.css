@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-/* ===== Variables de color ===== */ 
-=======
 /* ===== Variables de color ===== */
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
 :root {
   /* Paleta */
   --fondo-claro: #E5E7EB; /* gris claro */
@@ -10,11 +6,7 @@
   --texto-claro: #111111; 
   --texto-oscuro: #FFFFFF; 
   --color-boton: #2563EB; /* azul vivo */
-<<<<<<< HEAD
   --color-links: #1E3A8A; /* azul marino más claro */
-=======
-  --color-links: #1E3A8A; /* azul marial más claro */
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
 }
 
 /* ===== RESET ===== */
@@ -29,11 +21,8 @@ body {
   background-color: var(--fondo-claro);
   color: var(--texto-claro);
   transition: background-color 0.3s, color 0.3s;
-<<<<<<< HEAD
   line-height: 1.7;
   font-size: 1.1rem; /* 🔹 Aumento de tamaño base */
-=======
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
 }
 
 /* ===== Navbar ===== */
@@ -42,37 +31,25 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--fondo-claro);
+  background-color: #A3A3A3; /* gris medio con toque cálido */
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
   padding: 0.8rem 2rem;
-=======
-  padding: 1rem 2rem;
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   z-index: 1000;
 }
 
 .navbar .logo {
   font-family: 'Montserrat', sans-serif;
-<<<<<<< HEAD
   font-size: 1.4rem;
-=======
-  font-size: 1.5rem;
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
   font-weight: bold;
 }
 
 .navbar nav ul {
   list-style: none;
   display: flex;
-<<<<<<< HEAD
   gap: 1.2rem;
-=======
-  gap: 1rem;
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
 }
 
 .navbar nav ul li a {
@@ -80,18 +57,17 @@ body {
   font-family: 'Arial', sans-serif;
   color: var(--color-links);
   transition: color 0.2s;
-<<<<<<< HEAD
   font-size: 1.05rem;
-=======
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
+  font-weight: bold; /* 🔹 siempre en negrita */
 }
 
 .navbar nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* ===== Botones ===== */
-.acciones button {
+/* ===== Botones de la navbar siempre en negrita ===== */
+.navbar .acciones button {
+  font-weight: bold; /* siempre en negrita */
   margin-left: 0.5rem;
   padding: 0.5rem 1rem;
   border: none;
@@ -99,25 +75,17 @@ body {
   background-color: var(--color-boton);
   color: #fff;
   font-family: 'Arial', sans-serif;
-<<<<<<< HEAD
   font-size: 1rem;
-=======
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
   cursor: pointer;
   transition: opacity 0.3s;
 }
 
-.acciones button:hover {
-<<<<<<< HEAD
+.navbar .acciones button:hover {
   opacity: 0.85;
-=======
-  opacity: 0.8;
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
 }
 
 /* ===== Secciones ===== */
 .seccion {
-<<<<<<< HEAD
   padding: 4rem 1.5rem 2.5rem;
   max-width: 900px;
   margin: auto;
@@ -142,38 +110,21 @@ body {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-=======
-  padding: 6rem 2rem 3rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.titulo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  margin-top: 1rem;
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
 }
 
 .subtitulo {
   font-family: 'Arial', sans-serif;
-<<<<<<< HEAD
   font-size: 1.35rem;
   margin: 1.5rem 0 0.5rem;
   border-bottom: 2px solid var(--color-links);
   display: inline-block;
   padding-bottom: 3px;
-=======
-  font-size: 1.5rem;
-  margin: 1.5rem 0 0.5rem;
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
 }
 
 .subtitulo2 {
   font-family: 'Arial', sans-serif;
   font-size: 1.2rem;
   margin-top: 1rem;
-<<<<<<< HEAD
   font-weight: bold;
 }
 
@@ -190,26 +141,11 @@ body {
 .foto-perfil {
   width: 160px;
   height: 160px;
-=======
-}
-
-.texto {
-  font-family: 'Calibri', sans-serif;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-/* Foto de perfil */
-.foto-perfil {
-  width: 150px;
-  height: 150px;
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
 }
 
-<<<<<<< HEAD
 /* ===== Links (CV y contacto) ===== */
 a {
   color: var(--color-links);
@@ -262,17 +198,6 @@ a:hover {
 
 .btn-cv:hover {
   background: #1E3A8A;
-=======
-/* ===== Links (como el CV y contacto) ===== */
-a {
-  color: var(--color-links);
-  font-family: 'Arial', sans-serif;
-}
-
-/* Botón de enviar en formulario */
-.form-contacto button {
-  margin-top: 1rem;
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
 }
 
 /* ===== Modo oscuro ===== */
@@ -281,7 +206,6 @@ body.dark-mode {
   color: var(--texto-oscuro);
 }
 
-<<<<<<< HEAD
 /* 🔹 Forzar textos blancos en modo oscuro (excepto navbar) */
 body.dark-mode,
 body.dark-mode .titulo,
@@ -302,21 +226,9 @@ body.dark-mode h6 {
 }
 
 /* 🔹 Navbar en modo oscuro: "Mi portafolio" (texto) y botones en negro */
-body.dark-mode .navbar .logo, /* si Mi portafolio es la clase logo */
+body.dark-mode .navbar .logo,
 body.dark-mode .navbar nav ul li a,
 body.dark-mode .navbar .acciones button {
   color: #000000 !important;
-=======
-body.dark-mode .navbar {
-  background-color: var(--fondo-oscuro);
-}
-
-body.dark-mode .navbar nav ul li a {
-  color: var(--color-links);
-}
-
-body.dark-mode .acciones button {
-  background-color: var(--color-boton);
-  color: #fff;
->>>>>>> abd5ea48ef00d12c86c130307fe1fe2a446fe2cc
+  font-weight: bold; /* aseguramos negrita en modo oscuro */
 }
