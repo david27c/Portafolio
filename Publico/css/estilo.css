@@ -1,0 +1,231 @@
+/* ===== Variables de color ===== */ 
+:root {
+  /* Paleta */
+  --fondo-claro: #E5E7EB; /* gris claro */
+  --fondo-oscuro: #0F172A; /* azul negro */
+  --texto-claro: #111111; 
+  --texto-oscuro: #FFFFFF; 
+  --color-boton: #2563EB; /* azul vivo */
+  --color-links: #1E3A8A; /* azul marino más claro */
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Calibri', sans-serif;
+  background-color: var(--fondo-claro);
+  color: var(--texto-claro);
+  transition: background-color 0.3s, color 0.3s;
+  line-height: 1.7;
+  font-size: 1.1rem; /* 🔹 Aumento de tamaño base */
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--fondo-claro);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  color: var(--color-links);
+  transition: color 0.2s;
+  font-size: 1.05rem;
+}
+
+.navbar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Botones ===== */
+.acciones button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--color-boton);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.acciones button:hover {
+  opacity: 0.85;
+}
+
+/* ===== Secciones ===== */
+.seccion {
+  padding: 4rem 1.5rem 2.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* 🔹 Ajuste específico por sección */
+#inicio {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+#sobre-mi,
+#contacto {
+  padding-top: 3rem;
+  text-align: justify; /* 🔹 Justificación forzada */
+}
+
+/* ===== Encabezados ===== */
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.35rem;
+  margin: 1.5rem 0 0.5rem;
+  border-bottom: 2px solid var(--color-links);
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+.subtitulo2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* ===== Texto ===== */
+.texto {
+  font-family: 'Calibri', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+  max-width: 800px;
+}
+
+/* ===== Foto de perfil ===== */
+.foto-perfil {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* ===== Links (CV y contacto) ===== */
+a {
+  color: var(--color-links);
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Contacto ===== */
+.contacto-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.contacto-lista li {
+  margin: 12px 0; /* 🔹 separa cada ítem */
+}
+
+.contacto-lista a {
+  display: block; /* 🔹 cada link en una línea */
+  color: var(--color-links);
+  font-size: 1.05rem;
+}
+
+.contacto-lista a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Botón CV ===== */
+.btn-cv {
+  display: block;
+  width: fit-content;
+  margin: 20px 0;
+  background: var(--color-boton);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-cv:hover {
+  background: #1E3A8A;
+}
+
+/* ===== Modo oscuro ===== */
+body.dark-mode {
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-oscuro);
+}
+
+/* 🔹 Forzar textos blancos en modo oscuro (excepto navbar) */
+body.dark-mode,
+body.dark-mode .titulo,
+body.dark-mode .subtitulo,
+body.dark-mode .subtitulo2,
+body.dark-mode .texto,
+body.dark-mode .contacto-lista,
+body.dark-mode .contacto-lista a,
+body.dark-mode .lista,
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #FFFFFF !important;
+}
+
+/* 🔹 Navbar en modo oscuro: "Mi portafolio" (texto) y botones en negro */
+body.dark-mode .navbar .logo, /* si Mi portafolio es la clase logo */
+body.dark-mode .navbar nav ul li a,
+body.dark-mode .navbar .acciones button {
+  color: #000000 !important;
+}
