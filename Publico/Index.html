@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio - Inicio</title>
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Arial&family=Calibri&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="light-mode">
+  <!-- 🔹 Navbar fija -->
+  <header class="navbar">
+    <div class="logo">MiLogo</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+      </ul>
+    </nav>
+    <div class="acciones">
+      <!-- Botones de idioma -->
+      <button id="btn-es">ES</button>
+      <button id="btn-en">EN</button>
+      <!-- Botón modo claro/oscuro -->
+      <button id="modo-btn">🌙</button>
+    </div>
+  </header>
+
+  <!-- 🔹 Sección Inicio -->
+  <section id="inicio" class="seccion">
+    <div class="contenido">
+      <img src="img/foto.jpg" alt="Foto profesional" class="foto-perfil">
+      <h1 class="titulo">Tu Nombre Completo</h1>
+      <p class="frase">“Tu lema personal o frase inspiradora”</p>
+    </div>
+  </section>
+
+  <!-- 🔹 Sección Sobre mí -->
+  <section id="sobre-mi" class="seccion">
+    <h2 class="subtitulo">Sobre mí</h2>
+    <p class="texto">Aquí irá tu breve reseña profesional.</p>
+    <h3 class="subtitulo2">Habilidades duras y blandas</h3>
+    <p class="texto">Lista de habilidades...</p>
+    <h3 class="subtitulo2">Valores profesionales</h3>
+    <p class="texto">Tus valores...</p>
+    <h3 class="subtitulo2">Intereses</h3>
+    <p class="texto">Tus intereses...</p>
+    <a href="pdf/cv.pdf" class="link-cv" target="_blank">📄 Descargar CV</a>
+  </section>
+
+  <!-- 🔹 Sección Contacto -->
+  <section id="contacto" class="seccion">
+    <h2 class="subtitulo">Contacto</h2>
+    <ul class="contacto-lista">
+      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+      <li><a href="mailto:tu_outlook@outlook.com">Outlook</a></li>
+      <li><a href="mailto:tu_yahoo@yahoo.com">Yahoo</a></li>
+    </ul>
+    <!-- Formulario opcional -->
+    <form class="form-contacto">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
