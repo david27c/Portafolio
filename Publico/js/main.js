@@ -22,19 +22,17 @@ const textos = {
     logo: "Mi Portafolio",
     inicio: "Inicio",
     sobre: "Sobre mí",
-    proyectos: "Proyectos",
     contacto: "Contacto",
-    titulo_inicio: "¡Hola! Soy [Tu Nombre]",
+    titulo_inicio: "¡Hola! Soy David Ernesto Soto Cedillos",
     lema: "Desarrollador en constante aprendizaje."
   },
   en: {
     logo: "My Portfolio",
     inicio: "Home",
     sobre: "About Me",
-    proyectos: "Projects",
     contacto: "Contact",
-    titulo_inicio: "Hi! I’m David Soto",
-    lema: "Developer, always learning."
+    titulo_inicio: "Hi! I’m David Ernesto Soto Cedillos",
+    lema: "Developer in constant learning."
   }
 };
 
@@ -45,8 +43,7 @@ function cambiarIdioma(lang) {
   const enlaces = document.querySelectorAll(".navbar nav ul li a");
   enlaces[0].textContent = textos[lang].inicio;
   enlaces[1].textContent = textos[lang].sobre;
-  enlaces[2].textContent = textos[lang].proyectos;
-  enlaces[3].textContent = textos[lang].contacto;
+  enlaces[2].textContent = textos[lang].contacto;
   
   document.getElementById("titulo-inicio").textContent = textos[lang].titulo_inicio;
   document.getElementById("lema").textContent = textos[lang].lema;
