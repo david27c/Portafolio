@@ -33,7 +33,7 @@ const textos = {
     sobre: "About Me",
     proyectos: "Projects",
     contacto: "Contact",
-    titulo_inicio: "Hi! I’m [Your Name]",
+    titulo_inicio: "Hi! I’m David Soto",
     lema: "Developer, always learning."
   }
 };
