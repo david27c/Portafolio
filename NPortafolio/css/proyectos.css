@@ -1,0 +1,107 @@
+/* =====================================================
+  PROYECTOS.CSS
+  Estilos específicos para la página de proyectos,
+  complementando a estilo.css.
+=====================================================
+*/
+
+/* 🔹 1. Galería de Resúmenes (Layout Grid) */
+.galeria-resumen {
+    display: grid;
+    /* Usa 3 columnas si hay espacio (mínimo 280px por tarjeta), sino se adapta */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.tarjeta-proyecto {
+    /* Utiliza el color de texto claro como borde en modo claro */
+    border: 1px solid var(--texto-claro);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-proyecto img {
+    width: 100%;
+    max-height: 150px
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del botón "Ver Más" */
+.btn-ver-mas {
+    display: inline-block;
+    background: var(--color-boton);
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.btn-ver-mas:hover {
+    background: #1E3A8A;
+    text-decoration: none;
+}
+
+
+/* 🔹 2. Secciones de Detalle (Información Ampliada) */
+.seccion-detalles-container {
+    padding-top: 20px;
+}
+
+.seccion-detalle {
+    padding: 60px 0;
+    /* La línea divisora entre proyectos */
+    border-top: 1px solid var(--color-links); 
+    margin-top: 40px;
+    text-align: justify;
+}
+
+.seccion-detalle h3 {
+    font-size: 1.8rem;
+    color: var(--color-boton);
+    margin-bottom: 15px;
+}
+
+.seccion-detalle img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-detalle .info-rol {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+
+/* 🔹 MODO OSCURO: Ajustes específicos */
+body.dark-mode .tarjeta-proyecto {
+    /* Borde casi blanco para contraste y un fondo oscuro sutil */
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .seccion-detalle {
+    /* Borde blanco en modo oscuro */
+    border-top-color: rgba(255, 255, 255, 0.5);
+}

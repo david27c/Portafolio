@@ -1,4 +1,3 @@
-/* ===== Variables de color ===== */
 :root {
   /* Paleta */
   --fondo-claro: #E5E7EB; /* gris claro */
@@ -9,7 +8,6 @@
   --color-links: #1E3A8A; /* azul marino más claro */
 }
 
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
